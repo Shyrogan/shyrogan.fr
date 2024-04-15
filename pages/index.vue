@@ -17,12 +17,16 @@ useSeoMeta({
         Learn more about me and my journey in computer science through this
         website
       </p>
-      <Button class="mt-8 mr-4">Read my story</Button>
-      <Button variant="ghost" class="mt-8">
-        Mail me! (sebastien@shyrogan.fr)
-      </Button>
+      <NuxtLink href="#story">
+        <Button class="mt-8 mr-4">Read my story</Button>
+      </NuxtLink>
+      <NuxtLink href="mailto:sebastien@shyrogan.fr">
+        <Button variant="ghost" class="mt-8">
+          Mail me! (sebastien@shyrogan.fr)
+        </Button>
+      </NuxtLink>
     </div>
-    <div class="flex flex-col lg:w-1/2 w-full justify-center">
+    <div id="story" class="flex flex-col lg:w-1/2 w-full justify-center">
       <HomeImageCarousel
         class="-space-y-24 space-x-32 2xl:h-[48rem] xl:h-96 justify-center items-center w-full p-12"
         :imgs="[
@@ -76,7 +80,9 @@ useSeoMeta({
     <img src="/2b2t.png" alt="2b2t" class="animate-float w-1/2" />
   </HomeSection>
   <HomeSection>
-    <div class="lg:w-1/3 w-full font-serif space-y-2">
+    <div
+      class="flex flex-col lg:w-1/3 font-serif space-y-2 justify-center align-middle"
+    >
       <h1 class="text-5xl font-thin pb-2">Push it to the limits!</h1>
       <p>
         There came a moment when we realized our code wasn't cutting it: lag
@@ -128,7 +134,7 @@ useSeoMeta({
     </div>
   </HomeSection>
   <HomeSection>
-    <div class="lg:w-1/3 w-full font-serif space-y-2">
+    <div class="lg:w-1/3 w-full font-serif space-y-2 xl:mr-44 lg:mr-12">
       <h1 class="text-5xl font-thin pb-2">
         However, there comes a time for
         <span class="text-blue-500">new horizons</span>.

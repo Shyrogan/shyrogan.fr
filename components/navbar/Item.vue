@@ -8,7 +8,10 @@ defineProps<Props>()
 </script>
 
 <template>
-  <NuxtLink :href="href" class="font-medium tracking-tight">
+  <NuxtLink
+    :href="href"
+    class="font-medium tracking-tight hover:scale-105 active:scale-90 transition-all"
+  >
     <slot />
   </NuxtLink>
 </template>
